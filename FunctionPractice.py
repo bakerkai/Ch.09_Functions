@@ -39,3 +39,9 @@ if __name__ == "__main__":
     vol24 = 24 * volume_scyl(2, 3)
     print(vol24)
     '''
+def myprogram():
+    '''Functions go here'''
+
+print(__name__)
+if __name__ == "__main__":
+    myprogram()

@@ -1,28 +1,23 @@
-#Sign your name:________________
+#Sign your name:_____Kai Baker___________
 
-
+'''
 #1.) Correct the following code: (The user's number should be increased by 1 and printed.)
 
-def increase(x):
-    return x + 1
+def increase(un):
+    un += 1
+    print(un)
+increase(int(input(print("What is the number that you want increased?"))))
+#Couldn't figure out how to fix it so I just remade it
  
-num = input("Enter a number: ")
-increase(x)
-print("Your number has been increased to", x)
-                        
- 
-
-
 #2.) Correct the following code to print 1-10:
 
-def count_to_ten:
-    for i in range[10]:
+def count_to_ten():
+    for i in range(1,11):
         print(i)
  
 count_to_ten()
 
-
-
+'''
 #3.) Correct the following code to sum the list:
 
 def sum_list(list):
@@ -35,7 +30,7 @@ print(sum_list(list))
 
 
 
-
+'''
 #4.) Correct the following code which should reverse the sentence that is entered.
 
 def reverse(text):
@@ -67,4 +62,4 @@ def get_user_choice():
  
 user_command = get_user_choice()
 print("You entered:", user_command)
-
+'''
