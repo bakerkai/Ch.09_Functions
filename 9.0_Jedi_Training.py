@@ -21,8 +21,8 @@ count_to_ten()
 #3.) Correct the following code to sum the list:
 
 def sum_list(list):
-    for i in list:
-        sum = i
+    for contents in list:
+        sum = contents
         return sum
  
 list = [45, 2, 10, -5, 100]
