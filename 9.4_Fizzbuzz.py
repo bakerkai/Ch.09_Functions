@@ -34,3 +34,18 @@ fizzbuzz
 
 The classic test is to use the numbers 1-100 so make sure you test that with your function.
 '''
+def fizzbuzz(n):
+    result = []
+    for x in range(1, n+1):
+        if x % 3 == 0 and x % 5 == 0:
+            result.append("Fizz Buzz")
+        elif x % 3 == 0:
+            result.append('Fizz')
+        elif x % 5 == 0:
+            result.append('Buzz')
+        else:
+            result.append(str(x))
+    return result
+
+print(', '.join(fizzbuzz(20)))
+
