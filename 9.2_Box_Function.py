@@ -34,4 +34,12 @@ oooooooooo
 def box(x,y):
     for i in range(x):
         print("o"*y)
-box(3,5)
+def main():
+    box(7,5)
+    print()
+    box(3,2)
+    print()
+    box(3,10)
+
+if __name__ == "__main__":
+    main()
