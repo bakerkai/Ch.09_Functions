@@ -18,18 +18,20 @@ print(my_list)
 OUTPUT
 ------
 [2,5,1,6,3] #something like this 
-'''
-import random
-def create_list(x):
-    return x
-
-my_list = create_list(5)
-print(my_list)
 
 
 
+def main():
+    print()
 
-'''
+
+if __name__ == "__main__":
+    main()
+
+
+
+
+
 Function #2: Write a function called count_list that takes
 in a list and a number. Have the function return the number
 of times the specified number appears in the list. Once you've
@@ -44,8 +46,22 @@ print(count)
 
 OUTPUT
 ------
-3 
+3
 '''
+def count_list(l,n):
+    count = 0
+    for n in l:
+        if n == 3:''
+            count += 1
+        return count
+
+def main():
+    my_list = [1, 2, 3, 3, 3, 4, 2, 1]
+    count = count_list(my_list, 3)
+    print(count)
+
+if __name__ == "__main__":
+    main()
 
 
 
