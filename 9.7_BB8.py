@@ -11,44 +11,33 @@ multiple times. We pass three parameters to it: x, y and radius. Write the code 
 the draw_BB8() function so that the resulting picture looks as close as you can get
 it to the one on the website.
 '''
-
-# Imports arcade module
 import arcade
+arcade.open_window(600, 600, "BB8 program")
 
-# Opens a 600px by 600px window and puts BB8 in the title
-arcade.open_window(600, 600, "BB8")
+def draw_BB8(x, y, radius):
+    arcade.draw_circle_filled(x, y, radius, arcade.color.WHITE)
+    arcade.draw_circle_outline(x, y, radius, arcade.color.BLACK, 2)
+    arcade.draw_circle_filled(x, y, radius/1.5, arcade.color.ORANGE)
+    arcade.draw_circle_outline(x, y, radius/1.5, arcade.color.BLACK, 2)
+    arcade.draw_circle_filled(x, y, radius/3, arcade.color.LIGHT_STEEL_BLUE)
+    arcade.draw_circle_outline(x, y, radius/3, arcade.color.BLACK, 2)
+    arcade.draw_arc_filled(x, y+0.9*radius, radius*1.2, radius*1.2, arcade.color.WHITE, 0, 180)
+    arcade.draw_arc_outline(x, y+0.9*radius, radius*1.2, radius*1.2, arcade.color.BLACK, 0, 180, 3)
+    arcade.draw_line(x-0.6*radius, y+0.9*radius, x+0.6*radius, y+0.9*radius, arcade.color.BLACK, 2)
+    arcade.draw_circle_filled(x, y+1.2*radius, radius*0.2, arcade.color.BLUE_GRAY)
+    arcade.draw_circle_outline(x, y+1.2*radius, radius*0.2, arcade.color.BLACK, 2)
 
-# Function to draw BB8 robots
-def draw_BB8(x,y, radius):
-    arcade.draw_circle_filled(200, 200, 7, arcade.color.WHITE)
-    arcade.draw_circle_outline(200, 200, 7, arcade.color.BLACK)
 
-
-# The main function where we set background color, start and finish rendering and run.
 def main():
     arcade.set_background_color(arcade.color.WHEAT)
     arcade.start_render()
-
-    draw_BB8(100,50,50)
+    draw_BB8(100, 50, 50)
     draw_BB8(300, 300, 30)
     draw_BB8(500, 100, 20)
     draw_BB8(500, 400, 60)
     draw_BB8(120, 500, 15)
-
     arcade.finish_render()
     arcade.run()
 
-# Calls the main function
 if __name__=="__main__":
     main()
-# draw circle filled white
-# draw circle outline
-# draw circle filled orange
-# draw outline of said circle (both)
-# circle filled and the radius is divided by something
-
-# head
-# arc filled white same x y+ some distance up there scale with the radius
-# draw arc outline
-# draw a line for the neck
-# circle filled and a circle outline for the eye
